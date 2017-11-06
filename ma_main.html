@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<title>Ne lâche pas ma main - M. Bussi</title>
+</head>
+<body>
+	<div id="bloc_page">
+		<header>
+		<div id="titre">
+			<h1>Le Point Critique</h1>
+			<h2>La critique à livre ouvert</h2>
+		</div>
+
+		<div id="recherche">
+			<form>
+				<input type="text" name="search" placeholder="Rechercher" />
+				<input type="submit" name="research" value="Rechercher" />
+			</form>
+		</div>	
+		</header>
+
+		<!-- Menu horizontal -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="articles.html">Articles</a></li>
+				<li><a href="videos.html">Vidéos</a></li>
+				<li><a href="#">Résumés</a></li>
+				<li><a href="#">Notes</a></li>
+				<li><a href="#">Biographies</a></li>
+				<li><a href="#">Nous contacter</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<article>
+				<h2 id="general">On part en vacances!</h2>
+
+				<h2 class="categorie"><span class="titre">Ne Lâche pas ma main</span> - Michel Bussi</h2>
+				<div class="contenu">
+					<p><img src="images/bussi_ma_main.png" alt="Couverture du Roman" />
+					Voilà un roman sur lequel je suis mitigé... Entre le Thriller et le roman "normal", Michel Bussi nous emmène sur l'Île de la Réunion dans laquelle se dresse une intrigue (un peu trop) pleine de suspens. </p>
+					<p>Faites votre valises (n'oubliez pas de quoi vous protéger du soleil), réservez vos billets d'avion, on part en vacances - ou presque - à La Réunion.</p>
+					<p class="salut">Prêt?<br />
+					3... 2...1... Décollage</p>
+				</div>
+
+				<h2 class="categorie" onclick="afficherContenu(this);">Résumons résumons</h2>
+				<div class="contenu">
+					<p>Nous voilà enfin arrivés à La Réunion. J'espère que le voyage a été agréable.<br />
+					Alors, ça vous plaît?</p>
+					<p>Bien, alors résumons.</p>
+					<p>Comme dirait un clown connu de tous, <span class="titre">C'est l'histoire d'un mec...</span> (big up, Coluche).</p>
+					<p>Oui, c'est l'histoire d'un mec, Martial, sa gonzesse, Liane (non non, pas la chanteuse, je vous rassure ;p) ainsi que leur fille, Sofa (si si, je vous jure, c'est vraiment son blaze), qui partent en vacances à La Réunion (bon ça, vous l'aurez compris, je pense).</p>
+					<img src="images/plage_reunion.jpeg" alt="Photo plage de La Réunion" class="photo_paysage" />
+					<p>Le programme de leur journée? Rien de plus simple: bronzette, farniente, plage, piscine. Bref, le kiff le plus total!... Enfin presque. Parce qu'en vérité tout ne va pas se dérouler comme prévu...</p>
+					<p>Liane, un beau jour, disparaît de l'hôtel. Bon là c'est déjà chaudard.<br />
+					Mais ça se complique encore quand Martial devient le principal suspect, parce qu'il a été apperçu avec un chariot utilisé pour le nettoyage des chambres.<br />
+					Comment vous dire qu'il est mal barré pour s'en sortir, le bougre.</p>
+					<p>Bon et là, le bonhomme a une idée des plus... des plus... des plus ingénieuse *ironie*.<br /> 
+					Vu qu'il est accusé de la disparition de sa femme, le gars va décider de fuire, avec sa fille.</p>
+					<p>Martial et Sofa vont donc nous emmener avec eux à travers cette magnifique île.</p>
+					<p class="salut">Va-t-il réussir à prouver son innocence?</p>
+				</div>
+
+				<h2 class="categorie">Les + intéressants / Les - intéressants</h2>
+			<div class="contenu">
+				<p>Le résumé est alléchant, n'est-ce pas? L'histoire semble bonne. La trame de l'histoire est alléchante et ça donne vraiment envie de le lire. Et vous avez raison...</p>
+				<p>Voici un tableau qui récapitule les points positifs et les points négatifs du roman : </p>
+				<div id="interessant">
+					<div id="positifs">
+						<h5>Les + interessants</h5>
+						<ul>
+							<li>Personnages réalistes</li>
+							<li>Belle "visite" de la Réunion</li>
+							<li>Utilisation des mots locaux</li>
+							<li>On s'y croirait. On prend la place des personnages</li>
+							<li>Fin surprenante</li>
+						</ul>
+					</div>
+					<div id="negatifs">
+						<h5>Les - intéressants</h5>
+						<ul>
+							<li>Long à démarrer</li>
+							<li>Trop de suspens tue le suspens</li>
+							<li>Beaucoup (trop) de moments de lenteur</li>
+							<li>Pas assez de rebondissements</li>
+							<li>Les moments où l'action retombe sont trop nombreux</li>
+						</ul>
+					</div>
+				</div>
+				<div id="recommande">
+					<img src="images/croix_rouge.png" /><p id="no_recommend">Pas Recommande</p>
+				</div>
+			</div>
+
+			</article>
+
+		<aside>
+		<div class="infos">
+			<h3>Plus d'infos</h3>
+			<img src="images/bussi_ma_main.png" alt="Couverture" class="img_mini" />
+			<p><span class="item">Année :</span>2013<br>
+			<span class="item">Editeur:</span>Presses de la Cité<br />
+			<span class="item">Nombre de pages :</span>418 (Pocket)<br />
+			<span class="item">Prix :</span>6,94&euro; (Pocket)<br />
+			<span class="item">ISBN :</span>978-2-266-24438-1<br />
+			<span class="item">Note de l'équipe :</span> 2,5 / 5</p>
+		</div>
+		<div class="infos">
+			<h3>Rédacteur de l'article</h3>
+			<img src="images/Benito.jpg" alt="Photo du rédacteur de l'article" class="img_mini" />
+			<p>Agé de 21 ans, Benito est passionné de théâtre et fan de Renaud. La lecture fait parti de ses passe-temps favori. Il ne loupe pas une occasion de s'évader au travers de quelques pages. Il adore les thrillers et ne lit pratiquement plus que ça.</p>
+			<p>Ses auteurs préférés sont Marc Levy, Harlan Coben, Karine Giebel, Franck Thilliez et Donato Carrisi</p>
+		</div>
+		<div id="derniers_articles">
+			<h3>Derniers articles</h3>
+			<ul>
+				<li><a href="ma_main.html">On part en vacances!</a></li>
+			</ul>
+		</div>
+
+			<div id="videos">
+				<h3>Dernières vidéos en ligne</h3>
+				<figure class="video_mini">
+					<a href="video_lpc_1.html"><img src="images/miniature_lpc_1.png" alt="Miniature épisode 1"></a>
+					<figcaption><a href="video_lpc_1.html">LPC - épisode 1</a></figcaption>
+				</figure>
+
+				<hr>
+
+				<figure class="video_mini">
+					<a href="video_lpc_2.html"><img src="images/miniature_lpc_2.png" alt="Miniature épisode 2" /></a>
+					<figcaption><a href="video_lpc_2.html">LPC - épisode 2</a></figcaption>
+			</figure>
+			</div>
+		</aside>
+
+	</section>
+
+	<footer>
+		<div id="aide">
+			<h4>Aide et contact</h4>
+			<ul>
+				<li><a href="#">Liste des livres</a></li>
+				<li><a href="#">Plan du site</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+
+		<div id="connaitre">
+			<h4>Nous connaître</h4>
+			<ul>
+				<li><a href="#">Qui sommes-nous?</a></li>
+				<li><a href="#">Notre but</a></li>
+				<li><a href="mentions.html">Mentions légales</a></li> 
+			</ul>
+		</div>
+
+		<div id="suivre">
+			<h4>Suivez-nous</h4>
+			<ul>
+				<a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/lepointcritique"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+				<a target="_blank" title="follow me on facebook" href="http://www.facebook.com/lepointcritique"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+				<a target="_blank" title="follow me on youtube" href="http://www.youtube.com/UCM7tjqhsgDmk9wKyFASTGQA"><img alt="follow me on youtube" src="https://c866088.ssl.cf3.rackcdn.com/assets/youtube30x30.png" border=0></a>
+			</ul>
+		</div>
+
+		<div id="droits">
+			<h4>Copyright</h4>
+			<p>&copy; 2017 - <a href="#">lepointcritique.com</a> Tous droits réservés</p>	
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
